@@ -51,6 +51,7 @@ tags: ["#home", "#house"]
 
 - **Платформа**: Ajax
 - **Хаб**: Ajax Hub (установлен) ⚠️ неисправность цепи питания — работает только от аккумулятора
+  - Аккумуляторы: [extravolt.ru](https://extravolt.ru/dir_Ajax_alarm_battery.htm) · [mobiline-it.com](https://mobiline-it.com/items/akkumulyator-dlya-ajax-hub)
 - **Датчики движения**: установлены в нескольких зонах дома
 - **Датчики дыма**: установлены
 
@@ -61,8 +62,10 @@ tags: ["#home", "#house"]
 ## Умный дом
 
 ### Платформа
-- **Система**: [Home Assistant](https://www.home-assistant.io/)
+- **Система**: [Home Assistant](https://www.home-assistant.io/) — редакция **Home Assistant OS**
+- **Железо**: отдельный mini-PC (выделенный под HA)
 - **Голосовой помощник**: Яндекс Станция
+- **Уведомления**: настроена интеграция Telegram — автоматизации могут слать оповещения в Telegram
 
 ### Zigbee-сеть
 - **Протокол**: Zigbee
@@ -85,6 +88,12 @@ tags: ["#home", "#house"]
 
 ### Примечания
 *(Известные проблемы, планы по расширению)*
+
+**Ресурсы:**
+- [Подключение Telegram-бота к HA: уведомления и автоматизации](https://raspberry.tips/en/smart-home/home-assistant-telegram-bot-notifications-actions) — примеры настройки автоматизаций с Telegram
+
+**Альтернативы и эксперименты:**
+- Интеграция HA с Яндекс Станцией сейчас реализована через аддон **Yandex Smart Home**. Возможная альтернатива — [Home Assistant Matter Hub](https://t0bst4r.github.io/home-assistant-matter-hub/): поднимает Matter-мост, через который Яндекс Станция может управлять устройствами HA по протоколу Matter.
 
 ## Конструктив
 - **Фундамент**: 

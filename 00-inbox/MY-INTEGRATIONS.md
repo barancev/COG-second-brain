@@ -9,7 +9,7 @@ tags: ["#integrations", "#config", "#cog"]
 *COG checks this file before using any external service. Edit anytime.*
 
 ## Active
-*None yet.*
+- **Telegram**: Бот `barancev_claude_bot` для личных напоминаний и уведомлений. Токен и chat_id — в `00-inbox/.secrets` (gitignored). Отправка через Bot API `sendMessage`.
 
 ## Disabled
 - **GitHub**: Skipped during onboarding. Enable anytime by moving to Active section.

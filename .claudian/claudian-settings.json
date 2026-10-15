@@ -136,7 +136,10 @@
     }
   },
   "settingsProvider": "claude",
-  "lastSelectedChatModel": null,
+  "lastSelectedChatModel": {
+    "providerId": "claude",
+    "model": "sonnet"
+  },
   "savedProviderModel": {},
   "savedProviderEffort": {},
   "savedProviderServiceTier": {},
