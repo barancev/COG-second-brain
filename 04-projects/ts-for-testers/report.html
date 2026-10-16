@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Курс TypeScript для тестировщиков: отчёт ultragoal</title>
+<style>
+  :root {
+    --bg: #fbfbfa; --panel: #ffffff; --ink: #1a1a19; --muted: #6b6b68;
+    --line: #e4e4e1; --pass: #1a7f4b; --fail: #b4232a; --skip: #8a8a86;
+    --accent: #1a1a19;
+    --mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #131313; --panel: #1b1b1a; --ink: #ececea; --muted: #9a9a96;
+      --line: #2c2c2a; --pass: #4ec281; --fail: #f2777c; --skip: #7d7d79;
+      --accent: #ececea;
+    }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--ink); font: 15px/1.55 var(--sans); }
+  .wrap { max-width: 62rem; margin: 0 auto; padding: 3rem 1.5rem 6rem; }
+  header { border-bottom: 1px solid var(--line); padding-bottom: 1.5rem; margin-bottom: 2.5rem; }
+  h1 { font-size: 1.6rem; letter-spacing: -0.01em; margin: 0 0 .4rem; }
+  .meta { color: var(--muted); font: 13px/1.5 var(--mono); }
+  h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: .08em; color: var(--muted);
+       margin: 2.75rem 0 .9rem; font-weight: 600; }
+  p { margin: 0 0 1rem; }
+  .northstar { background: var(--panel); border: 1px solid var(--line); border-left: 3px solid var(--accent);
+               padding: 1rem 1.15rem; border-radius: 3px; }
+  .scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: 3px; background: var(--panel); }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th, td { text-align: left; padding: .6rem .8rem; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { font: 600 12px/1.4 var(--mono); text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
+  tr:last-child td { border-bottom: 0; }
+  td.id, td.cp { font-family: var(--mono); white-space: nowrap; }
+  .v { font: 600 12px/1.4 var(--mono); white-space: nowrap; }
+  .v.pass { color: var(--pass); } .v.fail { color: var(--fail); } .v.skip { color: var(--skip); }
+  .v.open { color: var(--skip); }
+  .obs { font-family: var(--mono); font-size: 12.5px; color: var(--muted); }
+  .next { background: var(--panel); border: 1px solid var(--line); padding: 1rem 1.15rem; border-radius: 3px; }
+  footer { margin-top: 3.5rem; padding-top: 1.25rem; border-top: 1px solid var(--line);
+           color: var(--muted); font: 12.5px/1.5 var(--mono); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Курс «Программирование на TypeScript для тестировщиков»</h1>
+  <div class="meta">ultragoal ts-for-testers · lane full · 2026-10-16 · outcome in-progress (P0 done)</div>
+</header>
+
+<h2>North star</h2>
+<p class="northstar">Готовый к запуску на software-testing.ru курс по TypeScript для тестировщиков: полная программа, написанные лекции и задания по всем модулям, рабочее учебное приложение и описание курса. Угол — веб/E2E на TypeScript (Playwright): типобезопасные автотесты фронтенда, Page Object Model, фикстуры. Аудитория — как в других курсах.</p>
+
+<h2>Phases</h2>
+<div class="scroll">
+<table>
+  <thead><tr><th>Phase</th><th>Scope</th><th>Covers</th><th>State</th></tr></thead>
+  <tbody>
+    <tr><td class="id">P0</td><td>Charter: spec, STATUS, реестр, документ позиционирования</td><td class="id">AC-01</td><td class="v pass">done</td></tr>
+    <tr><td class="id">P1</td><td>Программа и позиционирование: силлабус, стек, учебное приложение, черновик описания</td><td class="id">AC-02, AC-06</td><td class="v open">not started</td></tr>
+    <tr><td class="id">P2</td><td>Учебное приложение (SUT) + каркас проекта (TS + Playwright + CI)</td><td class="id">AC-03</td><td class="v open">not started</td></tr>
+    <tr><td class="id">P3</td><td>Модули: основы TypeScript и тест-раннер</td><td class="id">AC-04, AC-05</td><td class="v open">not started</td></tr>
+    <tr><td class="id">P4</td><td>Модули: Playwright и архитектура (POM, фикстуры, данные)</td><td class="id">AC-04, AC-05</td><td class="v open">not started</td></tr>
+    <tr><td class="id">P5</td><td>Модули: сеть/API и инфраструктура (CI, отчёты)</td><td class="id">AC-04, AC-05</td><td class="v open">not started</td></tr>
+    <tr><td class="id">P6</td><td>Финал: сборка, описание для сайта, готовность к запуску</td><td class="id">AC-06, AC-07</td><td class="v open">not started</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Acceptance criteria</h2>
+<div class="scroll">
+<table>
+  <thead><tr><th>AC</th><th>Criterion</th><th>Phase</th><th>Verdict</th></tr></thead>
+  <tbody>
+    <tr><td class="id">AC-01</td><td>Документ позиционирования с разделами (формат, аудитория, угол, стек, учебное приложение, цена/длительность)</td><td class="id">P0</td><td class="v pass">PASS</td></tr>
+    <tr><td class="id">AC-02</td><td>Полная программа: модули 0–N, у каждого лекции и ≥1 задание; покрыта дуга курса</td><td class="id">P1</td><td class="v open">open</td></tr>
+    <tr><td class="id">AC-03</td><td>Учебное приложение + рабочий каркас проекта (TS + Playwright + тест-раннер + CI)</td><td class="id">P2</td><td class="v open">open</td></tr>
+    <tr><td class="id">AC-04</td><td>Материалы лекций написаны для каждого модуля</td><td class="id">P3–P5</td><td class="v open">open</td></tr>
+    <tr><td class="id">AC-05</td><td>У каждого задания формулировка + эталонное решение, проходящее зелёным</td><td class="id">P3–P5</td><td class="v open">open</td></tr>
+    <tr><td class="id">AC-06</td><td>Описание курса для software-testing.ru/edu в формате сайта</td><td class="id">P1,P6</td><td class="v open">open</td></tr>
+    <tr><td class="id">AC-07</td><td>Чек-лист готовности к запуску зелёный</td><td class="id">P6</td><td class="v open">open</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Evidence</h2>
+<div class="scroll">
+<table>
+  <thead><tr><th>AC</th><th>CP</th><th>Verdict</th><th>Observation</th><th>Artifact</th></tr></thead>
+  <tbody>
+    <tr><td class="id">AC-01</td><td class="cp">CP-1</td><td class="v pass">PASS</td>
+        <td class="obs">Документ позиционирования существует, содержит все требуемые разделы</td>
+        <td class="obs">04-projects/courses/ts-for-testers.md</td></tr>
+  </tbody>
+</table>
+</div>
+
+<h2>Next action</h2>
+<p class="next">Запустить фазу P1: разработать полную программу курса (модули 0–N, лекции + ≥1 задание каждый), зафиксировать стек и тест-раннер (Playwright Test vs Vitest), предложить учебное приложение-кандидат, набросать описание для сайта. Ожидается подтверждение пользователя по составу модулей и выбору тест-раннера перед написанием материалов (P3+).</p>
+
+<footer>
+  Generated by the COG verification harness · evidence bundle 04-projects/ts-for-testers/evidence/
+</footer>
+
+</div>
+</body>
+</html>
