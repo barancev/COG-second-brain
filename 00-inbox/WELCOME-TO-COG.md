@@ -32,7 +32,7 @@ As a **Founder** (solo founder of your own teaching business), these skills are 
 
 ## Your Integrations
 
-No integrations configured yet. COG works great standalone — add integrations anytime by editing `00-inbox/MY-INTEGRATIONS.md`. When the code for your projects lives on GitHub, enabling it there is the most useful first step.
+Активная интеграция: **Telegram** (бот `barancev_claude_bot`). Добавить или отключить интеграции можно в `00-inbox/MY-INTEGRATIONS.md`.
 
 ## Quick Start
 
@@ -41,15 +41,18 @@ Invoke the daily-brief skill to get your personalized intelligence briefing cove
 - Тестирование ПО и обучение тестировщиков
 - Автоматизация тестирования
 - AI в тестировании
+- AI в образовании
 - Онлайн-образование и edtech
 - Продажа и маркетинг онлайн-курсов
+- Home Assistant и умный дом
 
 ### 2. Capture Your Thoughts
 Use the braindump skill to quickly capture ideas, insights, and thoughts. Your braindumps will automatically be categorized into personal, professional, or project domains.
 
 Choose from your active projects:
-- [[04-projects/course-sales-site/PROJECT-OVERVIEW|Сайт для продажи курсов]]
-- [[04-projects/student-registry/PROJECT-OVERVIEW|Система регистрации и учёта студентов]]
+- [[04-projects/courses/PROJECT-OVERVIEW|Разработка и доработка курсов]]
+- [[04-projects/stqa-infrastructure/PROJECT-OVERVIEW|Инфраструктура software-testing.ru]]
+- [[04-projects/home-maintenance/PROJECT-OVERVIEW|Обслуживание дома]]
 
 ### 3. Weekly Reflection
 Every week, use the weekly-checkin skill to review your week's insights and patterns.
