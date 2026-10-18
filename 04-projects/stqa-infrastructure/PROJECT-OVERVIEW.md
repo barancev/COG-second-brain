@@ -46,6 +46,7 @@ tags: ["#project", "#overview", "#infrastructure"]
 Система регистрации и учёта студентов. Студенты регистрируются на курсы, ведётся их учёт, выдаются сертификаты об окончании.
 
 - **Исходный код**: `g:\devel\my\stqa\stqa\`
+- **Стек**: TypeScript; фронтенд — Vue.js; бэкенд — AWS Lambda (serverless)
 - **БД (регистрации и курсы)**: PostgreSQL на [sweb.ru](https://sweb.ru)
 - **БД (сертификаты)**: отдельная PostgreSQL там же на sweb.ru
   - Альтернативные сервисы для PostgreSQL: [reg.cloud](https://reg.cloud/services/postgresql) · [beget.com Cloud DBaaS](https://beget.com/ru/cloud/dbaas)
